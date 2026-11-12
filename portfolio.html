@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharath's Portfolio</title>
+    <style>
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #0f172a;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            font-size: 1.8rem;
+            color: #fff;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        #navbar {
+            display: flex;
+            gap: 20px; 
+        }
+
+        #navbar a {
+            color: #ecf0f1;
+            text-decoration: none; 
+            font-size: 1rem;
+            font-weight: 500; 
+            transition: color 0.3s;
+        }
+
+        #navbar a:hover {
+            color: #4f46e5;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .home {
+            display: flex;
+            flex-direction: row; 
+            align-items: center; 
+            justify-content: center;
+            gap: 50px; 
+        }
+        .home-text {
+            text-align: left;
+        }
+        section {
+            padding: 60px 0 20px 0;
+        }
+        .main-heading {
+            text-align: center;
+            font-size: 2.2rem;
+            color: #0f172a;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            border-bottom: 3px solid #4f46e5;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+        }
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #4f46e5;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .home h1 {
+            font-size: 3rem;
+            font-weight: normal;
+        }
+        .home h1 strong {
+            color: #4f46e5;
+            font-weight: 800;
+        }
+        .homebuttons {
+            display: flex;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        .mybutton {
+            padding: 12px 25px; 
+            background-color: #4f46e5; 
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        .mybutton:hover {
+            background-color: #4338ca;
+        }
+        .project-box {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            border-left: 5px solid #4f46e5;
+        }
+        .project-box h3 {
+            color: #0f172a;
+            margin-bottom: 10px;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            gap: 20px;
+            align-items: start;
+        }
+        .projects .project-box {
+            margin-bottom: 0; 
+        }
+        .skill-item {
+            display: inline-block;
+            background-color: #ecf0f1;
+            color: #0f172a;
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin: 5px 5px 15px 0;
+            font-weight: 600;
+            border: 1px solid #bdc3c7;
+        }
+        ul {
+            list-style-position: inside;
+            line-height: 1.8;
+        }
+        .contact .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 15px;
+        }
+        .contact a {
+            color: #4f46e5;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .submit-button {
+            padding: 12px 30px;
+            background-color: #4f46e5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .submit-button:hover {
+            background-color: #4338ca;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Portfolio</div>
+        <nav id="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+       <section class="home" id="home">
+    <img src="file:///Users/bharathh/Downloads/WhatsApp%20Image%202026-11-11%20at%2012.05.50.jpeg" alt="Profile Picture" class="profile-image">
+    <div class="home-text">
+        <h1>Hi, I'm <strong>Bharath</strong></h1>
+        <p>First-Year Computer Science AI/ML Student.Currently learning Java and Data Structures.</p>
+        <p> I built this portfolio to practice my HTML/CSS skills</p>
+        <div class="homebuttons">
+            <a href="#projects" class="mybutton">View My Projects</a>
+            <a href="#contact" class="mybutton">Contact Me</a>
+        </div>
+    </div>
+
+</section>
+
+        <section class="about" id="about">
+            <h2 class="main-heading">About Me</h2>
+            <div class="about-content project-box">
+                <p>I am a first-year Computer Science student pursuing my B.Tech in Artificial Intelligence and Machine Learning. I enjoy exploring new programming languages, frameworks, and web development stacks to build useful applications.</p><br>
+                <p>My key areas of interest are core programming in Java, web development, and problem solving. My current goal is to build strong software engineering fundamentals and create responsive web projects.</p>
+            </div>
+        </section>
+
+        <section class="education" id="education">
+            <h2 class="main-heading">Education</h2>
+            <div class="project-box">
+                <span>2025 - 2029 </span>
+                <h3>Bachelor of Technology in Computer Science AI/ML</h3>
+                <p>Bosscoder School of Technology / Department of CSE and AI/ML</p>
+                <p>Current Standing: 1st Year, 1st Semester • CGPA: 9.2 / 10.0</p>
+            </div>
+            <div class="project-box">
+                <span>2023 - 2025</span>
+                <h3>Higher Secondary Education </h3>
+                <p>ASCENT junior college</p>
+                <p>Achieved 96.7% in Mathematics and Physics.</p>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <h2 class="main-heading">Skills</h2>
+            <div class="project-box">
+                <p><strong>Technical Skills:</strong></p>
+                <span class="skill-item">HTML</span>
+                <span class="skill-item">CSS</span>
+                <span class="skill-item">C</span>
+                <span class="skill-item">Java</span>
+                <span class="skill-item">Data Structures</span>
+                <span class="skill-item">Python</span>
+                <p><strong>Soft Skills:</strong></p>
+                <span class="skill-item">Communication</span>
+                <span class="skill-item">Teamwork</span>
+                <span class="skill-item">Problem Solving</span>
+                <span class="skill-item">Time Management</span>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <h2 class="main-heading">Projects</h2>
+            <div class="project-box">
+                <h3>Vibe Coding Directory</h3>
+                <p>A directory for coding tools I built using React for the frontend.</p>
+                <p><strong>Technologies:</strong> React, Vite, Tailwind CSS</p>
+                <a href="#projects" class="mybutton">View Details</a>
+            </div>
+            <div class="project-box">
+                <h3>CityPulse Prototype</h3>
+                <p>A web dashboard prototype built during a hackathon to present live data status metrics clearly.</p>
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                <a href="#projects" class="mybutton">View Details</a>
+            </div>
+        </section>
+
+        <section class="hobbies" id="hobbies">
+            <h2 class="main-heading">Hobbies and Interests</h2>
+            <div class="project-box">
+                <ul>
+                    <li> <strong>Mobile Gaming:</strong> Playing tactical strategy and battle royale games.</li>
+                    <li> <strong>Cinema:</strong> Watching science fiction films and new releases.</li>
+                    <li> <strong>Riding:</strong> Exploring scenic roads and planning long trips.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="achievements" id="achievements">
+            <h2 class="main-heading">Achievements</h2>
+            <div class="project-box">
+                <ul>
+                    <li> <strong>Argonyx '26 Finalist:</strong> Participated with project team T18-pivot.</li>
+                    <li> <strong>Hack with Hyderabad 3.0:</strong> Project participant.</li>
+                    <li> <strong>Bosscoder Contest 001:</strong> Programming contest participant.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="main-heading">Contact Me</h2>
+            <div class="project-box">
+                <p>Email: <strong>bharath@example.com</strong></p>
+                <p>Profiles: <a href="https://github.com" target="_blank">GitHub</a> | <a href="https://linkedin.com" target="_blank">LinkedIn</a></p>
+                <a href="mailto:bharath@example.com" class="mybutton">Send Email</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
